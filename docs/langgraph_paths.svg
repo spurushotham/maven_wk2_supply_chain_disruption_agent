@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320" role="img" aria-labelledby="title desc">
+  <title id="title">Supply Chain Impact Agent - LangGraph Request Paths</title>
+  <desc id="desc">Visual flowchart showing how user questions route through typed tools, evidence retrieval, alternatives, and answer validation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef4fb"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#153b5b"/>
+      <stop offset="1" stop-color="#246b89"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#17324d" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#58728a"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Arial, sans-serif; fill: #ffffff; }
+      .subtitle { font: 400 17px Arial, sans-serif; fill: #d7edf7; }
+      .section { font: 700 18px Arial, sans-serif; fill: #23435c; letter-spacing: 1px; }
+      .node-title { font: 700 16px Arial, sans-serif; fill: #17324d; }
+      .node-text { font: 400 14px Arial, sans-serif; fill: #38536a; }
+      .decision { font: 700 14px Arial, sans-serif; fill: #17324d; }
+      .small { font: 400 12px Arial, sans-serif; fill: #557087; }
+      .label { font: 700 12px Arial, sans-serif; fill: #557087; }
+      .edge { fill: none; stroke: #58728a; stroke-width: 2.5; marker-end: url(#arrow); }
+      .dashed { fill: none; stroke: #8fa5b6; stroke-width: 2; stroke-dasharray: 7 6; marker-end: url(#arrow); }
+      .process { fill: #ffffff; stroke: #9bb6c9; stroke-width: 2; rx: 12; filter: url(#shadow); }
+      .tool { fill: #e8f5f7; stroke: #4d9eae; stroke-width: 2; rx: 12; filter: url(#shadow); }
+      .decision-box { fill: #fff7df; stroke: #d4a53b; stroke-width: 2; filter: url(#shadow); }
+      .evidence { fill: #edf4ff; stroke: #6e93c8; stroke-width: 2; rx: 12; filter: url(#shadow); }
+      .success { fill: #eaf7ed; stroke: #63a477; stroke-width: 2; rx: 12; filter: url(#shadow); }
+      .warning { fill: #fff0ee; stroke: #c87c70; stroke-width: 2; rx: 12; filter: url(#shadow); }
+      .pill { fill: #dcecf4; rx: 10; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1320" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1800" height="150" fill="url(#header)"/>
+  <text x="70" y="62" class="title">Supply Chain Impact Agent</text>
+  <text x="70" y="99" class="subtitle">LangGraph request paths: intent routing, typed tools, evidence, alternatives, and answer validation</text>
+  <rect x="1450" y="48" width="270" height="42" class="pill"/>
+  <text x="1585" y="75" text-anchor="middle" class="node-title">Evidence-backed workflow</text>
+
+  <text x="70" y="190" class="section">1  REQUEST INTAKE</text>
+  <text x="70" y="580" class="section">2  REQUEST-SPECIFIC TOOL PATHS</text>
+  <text x="70" y="1015" class="section">3  FINALIZATION AND SAFETY</text>
+
+  <rect x="70" y="220" width="270" height="92" class="process"/>
+  <text x="205" y="256" text-anchor="middle" class="node-title">User question</text>
+  <text x="205" y="280" text-anchor="middle" class="node-text">Target + date + business request</text>
+
+  <rect x="420" y="220" width="290" height="92" class="process"/>
+  <text x="565" y="256" text-anchor="middle" class="node-title">Load graph snapshot</text>
+  <text x="565" y="280" text-anchor="middle" class="node-text">Refresh and validate data scope</text>
+
+  <rect x="790" y="220" width="290" height="92" class="process"/>
+  <text x="935" y="256" text-anchor="middle" class="node-title">Initialize turn state</text>
+  <text x="935" y="280" text-anchor="middle" class="node-text">Messages, ledger, call budget</text>
+
+  <polygon points="1280,208 1425,266 1280,324 1135,266" class="decision-box"/>
+  <text x="1280" y="261" text-anchor="middle" class="decision">Target clear?</text>
+  <text x="1280" y="281" text-anchor="middle" class="small">Resolve scope first</text>
+
+  <path d="M340 266 H420" class="edge"/>
+  <path d="M710 266 H790" class="edge"/>
+  <path d="M1080 266 H1135" class="edge"/>
+
+  <rect x="1510" y="220" width="220" height="92" class="warning"/>
+  <text x="1620" y="256" text-anchor="middle" class="node-title">Clarify target</text>
+  <text x="1620" y="280" text-anchor="middle" class="node-text">Never guess an entity</text>
+  <path d="M1425 266 H1510" class="edge"/>
+  <text x="1460" y="250" class="label">No</text>
+
+  <rect x="115" y="620" width="260" height="90" class="tool"/>
+  <text x="245" y="654" text-anchor="middle" class="node-title">Sourcing exposure</text>
+  <text x="245" y="678" text-anchor="middle" class="node-text">Supplier, facility, component</text>
+  <text x="245" y="697" text-anchor="middle" class="small">trace_sourcing_exposure</text>
+
+  <rect x="465" y="620" width="260" height="90" class="tool"/>
+  <text x="595" y="654" text-anchor="middle" class="node-title">DC exposure</text>
+  <text x="595" y="678" text-anchor="middle" class="node-text">Distribution-center impact</text>
+  <text x="595" y="697" text-anchor="middle" class="small">trace_dc_exposure</text>
+
+  <rect x="815" y="620" width="260" height="90" class="tool"/>
+  <text x="945" y="654" text-anchor="middle" class="node-title">Route exposure</text>
+  <text x="945" y="678" text-anchor="middle" class="node-text">Exact vendor + SKU route</text>
+  <text x="945" y="697" text-anchor="middle" class="small">trace_distribution_exposure</text>
+
+  <rect x="1165" y="620" width="260" height="90" class="tool"/>
+  <text x="1295" y="654" text-anchor="middle" class="node-title">Disruption details</text>
+  <text x="1295" y="678" text-anchor="middle" class="node-text">Scope, dates, applicability</text>
+  <text x="1295" y="697" text-anchor="middle" class="small">get_disruption_details</text>
+
+  <rect x="1515" y="620" width="220" height="90" class="tool"/>
+  <text x="1625" y="654" text-anchor="middle" class="node-title">Communities</text>
+  <text x="1625" y="678" text-anchor="middle" class="node-text">Shared facilities</text>
+  <text x="1625" y="697" text-anchor="middle" class="small">analyze_supply_communities</text>
+
+  <path d="M1280 324 V480 H245 V620" class="edge"/>
+  <path d="M1280 324 V480 H595 V620" class="edge"/>
+  <path d="M1280 324 V480 H945 V620" class="edge"/>
+  <path d="M1280 324 V480 H1295 V620" class="edge"/>
+  <path d="M1280 324 V480 H1625 V620" class="edge"/>
+  <text x="1120" y="464" class="label">Yes: classify request intent</text>
+
+  <rect x="115" y="760" width="260" height="90" class="evidence"/>
+  <text x="245" y="794" text-anchor="middle" class="node-title">Sourcing alternatives</text>
+  <text x="245" y="818" text-anchor="middle" class="node-text">Approved backup suppliers</text>
+  <text x="245" y="837" text-anchor="middle" class="small">find_sourcing_alternatives</text>
+
+  <rect x="465" y="760" width="260" height="90" class="evidence"/>
+  <text x="595" y="794" text-anchor="middle" class="node-title">Route alternatives</text>
+  <text x="595" y="818" text-anchor="middle" class="node-text">Approved backup routes</text>
+  <text x="595" y="837" text-anchor="middle" class="small">find_route_alternatives</text>
+
+  <rect x="815" y="760" width="260" height="90" class="evidence"/>
+  <text x="945" y="794" text-anchor="middle" class="node-title">Dependency evidence</text>
+  <text x="945" y="818" text-anchor="middle" class="node-text">Exact source excerpts</text>
+  <text x="945" y="837" text-anchor="middle" class="small">get_dependency_evidence</text>
+
+  <rect x="1165" y="760" width="570" height="90" class="process"/>
+  <text x="1450" y="794" text-anchor="middle" class="node-title">Evidence ledger</text>
+  <text x="1450" y="818" text-anchor="middle" class="node-text">Record tool results, entity IDs, evidence IDs, limits, and coverage gaps</text>
+
+  <path d="M245 710 V760" class="dashed"/>
+  <path d="M595 710 V760" class="dashed"/>
+  <path d="M945 710 V760" class="dashed"/>
+  <path d="M1295 710 V805 H1165" class="edge"/>
+  <path d="M1625 710 V805 H1735" class="edge"/>
+  <path d="M375 805 H815" class="dashed"/>
+  <path d="M725 805 H815" class="dashed"/>
+  <path d="M1075 805 H1165" class="edge"/>
+
+  <rect x="70" y="1055" width="360" height="100" class="process"/>
+  <text x="250" y="1091" text-anchor="middle" class="node-title">Reason loop</text>
+  <text x="250" y="1116" text-anchor="middle" class="node-text">Additional typed tool calls if useful</text>
+  <text x="250" y="1138" text-anchor="middle" class="small">Stops at configured call budget</text>
+
+  <rect x="535" y="1055" width="360" height="100" class="process"/>
+  <text x="715" y="1091" text-anchor="middle" class="node-title">Draft structured answer</text>
+  <text x="715" y="1116" text-anchor="middle" class="node-text">Claims, limitations, next checks</text>
+  <text x="715" y="1138" text-anchor="middle" class="small">No unsupported business claims</text>
+
+  <polygon points="1115,1035 1260,1105 1115,1175 970,1105" class="decision-box"/>
+  <text x="1115" y="1100" text-anchor="middle" class="decision">Claims supported?</text>
+  <text x="1115" y="1120" text-anchor="middle" class="small">Current-turn IDs</text>
+
+  <rect x="1350" y="1055" width="350" height="100" class="success"/>
+  <text x="1525" y="1091" text-anchor="middle" class="node-title">Return answer</text>
+  <text x="1525" y="1116" text-anchor="middle" class="node-text">Findings + evidence + limitations</text>
+  <text x="1525" y="1138" text-anchor="middle" class="small">Rendered in UI, CLI, or JSON</text>
+
+  <rect x="970" y="1210" width="290" height="70" class="warning"/>
+  <text x="1115" y="1238" text-anchor="middle" class="node-title">insufficient_evidence</text>
+  <text x="1115" y="1261" text-anchor="middle" class="small">Explain gaps and recommend next checks</text>
+
+  <path d="M1450 850 V960 H250 V1055" class="dashed"/>
+  <path d="M430 1105 H535" class="edge"/>
+  <path d="M895 1105 H970" class="edge"/>
+  <path d="M1260 1105 H1350" class="edge"/>
+  <path d="M1115 1175 V1210" class="edge"/>
+  <text x="1280" y="1088" class="label">Yes</text>
+  <text x="1140" y="1198" class="label">No</text>
+
+  <text x="70" y="1300" class="small">Typed tools: resolve_entity_tool, trace_sourcing_exposure, trace_dc_exposure, trace_distribution_exposure, get_disruption_details, alternatives, evidence, and community analysis.</text>
+</svg>

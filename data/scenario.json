@@ -1,0 +1,3667 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "default_date": "2026-10-14",
+  "master_evidence": "E-MASTER",
+  "entities": [
+    {
+      "id": "SUP-AP",
+      "label": "Supplier",
+      "name": "Apex Textiles"
+    },
+    {
+      "id": "SUP-SM",
+      "label": "Supplier",
+      "name": "Summit Materials"
+    },
+    {
+      "id": "SUP-FC",
+      "label": "Supplier",
+      "name": "Flex Components"
+    },
+    {
+      "id": "SUP-HP",
+      "label": "Supplier",
+      "name": "Harbor Packaging"
+    },
+    {
+      "id": "FAC-AE",
+      "label": "ProductionFacility",
+      "name": "Apex East",
+      "supplier": "SUP-AP",
+      "components": [
+        "C-CT",
+        "C-TF"
+      ]
+    },
+    {
+      "id": "FAC-AW",
+      "label": "ProductionFacility",
+      "name": "Apex West",
+      "supplier": "SUP-AP",
+      "components": [
+        "C-CT",
+        "C-RF"
+      ]
+    },
+    {
+      "id": "FAC-SN",
+      "label": "ProductionFacility",
+      "name": "Summit North",
+      "supplier": "SUP-SM",
+      "components": [
+        "C-RS",
+        "C-FI"
+      ]
+    },
+    {
+      "id": "FAC-SS",
+      "label": "ProductionFacility",
+      "name": "Summit South",
+      "supplier": "SUP-SM",
+      "components": [
+        "C-RS",
+        "C-BK"
+      ]
+    },
+    {
+      "id": "FAC-FP",
+      "label": "ProductionFacility",
+      "name": "Flex Plant",
+      "supplier": "SUP-FC",
+      "components": [
+        "C-MZ",
+        "C-BK",
+        "C-FI"
+      ]
+    },
+    {
+      "id": "FAC-HP",
+      "label": "ProductionFacility",
+      "name": "Harbor Plant",
+      "supplier": "SUP-HP",
+      "components": [
+        "C-SC"
+      ]
+    },
+    {
+      "id": "V-NA",
+      "label": "Vendor",
+      "name": "Northstar Apparel"
+    },
+    {
+      "id": "V-TW",
+      "label": "Vendor",
+      "name": "TrailWorks"
+    },
+    {
+      "id": "V-UC",
+      "label": "Vendor",
+      "name": "UrbanCarry"
+    },
+    {
+      "id": "V-EE",
+      "label": "Vendor",
+      "name": "Everyday Essentials"
+    },
+    {
+      "id": "C-CT",
+      "label": "Component",
+      "name": "Cotton Fabric"
+    },
+    {
+      "id": "C-TF",
+      "label": "Component",
+      "name": "Technical Fabric"
+    },
+    {
+      "id": "C-RF",
+      "label": "Component",
+      "name": "Recycled Fabric"
+    },
+    {
+      "id": "C-RS",
+      "label": "Component",
+      "name": "Rubber Sole"
+    },
+    {
+      "id": "C-FI",
+      "label": "Component",
+      "name": "Foam Insole"
+    },
+    {
+      "id": "C-MZ",
+      "label": "Component",
+      "name": "Metal Zipper"
+    },
+    {
+      "id": "C-BK",
+      "label": "Component",
+      "name": "Buckle"
+    },
+    {
+      "id": "C-SC",
+      "label": "Component",
+      "name": "Shipping Carton"
+    },
+    {
+      "id": "CAT-APP",
+      "label": "Category",
+      "name": "Apparel"
+    },
+    {
+      "id": "CAT-FOOT",
+      "label": "Category",
+      "name": "Footwear"
+    },
+    {
+      "id": "CAT-BAG",
+      "label": "Category",
+      "name": "Bags"
+    },
+    {
+      "id": "DC-E",
+      "label": "DC",
+      "name": "East DC"
+    },
+    {
+      "id": "DC-C",
+      "label": "DC",
+      "name": "Central DC"
+    },
+    {
+      "id": "DC-S",
+      "label": "DC",
+      "name": "South DC"
+    },
+    {
+      "id": "DC-W",
+      "label": "DC",
+      "name": "West DC"
+    },
+    {
+      "id": "ST-BOS",
+      "label": "Store",
+      "name": "Boston",
+      "primary_dc": "DC-E",
+      "backup_dc": "DC-C"
+    },
+    {
+      "id": "ST-NYC",
+      "label": "Store",
+      "name": "NYC",
+      "primary_dc": "DC-E",
+      "backup_dc": "DC-C"
+    },
+    {
+      "id": "ST-CHI",
+      "label": "Store",
+      "name": "Chicago",
+      "primary_dc": "DC-C",
+      "backup_dc": "DC-E"
+    },
+    {
+      "id": "ST-MIN",
+      "label": "Store",
+      "name": "Minneapolis",
+      "primary_dc": "DC-C",
+      "backup_dc": "DC-E"
+    },
+    {
+      "id": "ST-DAL",
+      "label": "Store",
+      "name": "Dallas",
+      "primary_dc": "DC-S",
+      "backup_dc": "DC-C"
+    },
+    {
+      "id": "ST-ATL",
+      "label": "Store",
+      "name": "Atlanta",
+      "primary_dc": "DC-S",
+      "backup_dc": "DC-C"
+    },
+    {
+      "id": "ST-SEA",
+      "label": "Store",
+      "name": "Seattle",
+      "primary_dc": "DC-W",
+      "backup_dc": "DC-S"
+    },
+    {
+      "id": "ST-LA",
+      "label": "Store",
+      "name": "Los Angeles",
+      "primary_dc": "DC-W",
+      "backup_dc": "DC-S"
+    },
+    {
+      "id": "A01",
+      "label": "SKU",
+      "name": "Basic Tee",
+      "category": "CAT-APP",
+      "vendors": [
+        "V-NA",
+        "V-EE"
+      ],
+      "components": [
+        "C-CT",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-C",
+        "DC-S"
+      ]
+    },
+    {
+      "id": "A02",
+      "label": "SKU",
+      "name": "Polo",
+      "category": "CAT-APP",
+      "vendors": [
+        "V-NA"
+      ],
+      "components": [
+        "C-CT",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-S"
+      ]
+    },
+    {
+      "id": "A03",
+      "label": "SKU",
+      "name": "Rain Jacket",
+      "category": "CAT-APP",
+      "vendors": [
+        "V-NA",
+        "V-TW"
+      ],
+      "components": [
+        "C-TF",
+        "C-MZ",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-W"
+      ]
+    },
+    {
+      "id": "A04",
+      "label": "SKU",
+      "name": "Fleece Jacket",
+      "category": "CAT-APP",
+      "vendors": [
+        "V-TW",
+        "V-EE"
+      ],
+      "components": [
+        "C-RF",
+        "C-MZ",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-C",
+        "DC-W"
+      ]
+    },
+    {
+      "id": "F01",
+      "label": "SKU",
+      "name": "Running Shoe",
+      "category": "CAT-FOOT",
+      "vendors": [
+        "V-TW",
+        "V-EE"
+      ],
+      "components": [
+        "C-TF",
+        "C-RS",
+        "C-FI",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-C",
+        "DC-S",
+        "DC-W"
+      ]
+    },
+    {
+      "id": "F02",
+      "label": "SKU",
+      "name": "Hiking Boot",
+      "category": "CAT-FOOT",
+      "vendors": [
+        "V-TW"
+      ],
+      "components": [
+        "C-TF",
+        "C-RS",
+        "C-MZ",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-C",
+        "DC-W"
+      ]
+    },
+    {
+      "id": "F03",
+      "label": "SKU",
+      "name": "Casual Sneaker",
+      "category": "CAT-FOOT",
+      "vendors": [
+        "V-UC",
+        "V-EE"
+      ],
+      "components": [
+        "C-CT",
+        "C-RS",
+        "C-FI",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-S",
+        "DC-W"
+      ]
+    },
+    {
+      "id": "F04",
+      "label": "SKU",
+      "name": "Slip-on Shoe",
+      "category": "CAT-FOOT",
+      "vendors": [
+        "V-EE"
+      ],
+      "components": [
+        "C-RF",
+        "C-RS",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-C",
+        "DC-S"
+      ]
+    },
+    {
+      "id": "B01",
+      "label": "SKU",
+      "name": "Backpack",
+      "category": "CAT-BAG",
+      "vendors": [
+        "V-UC",
+        "V-TW"
+      ],
+      "components": [
+        "C-TF",
+        "C-MZ",
+        "C-BK",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-C",
+        "DC-S",
+        "DC-W"
+      ]
+    },
+    {
+      "id": "B02",
+      "label": "SKU",
+      "name": "Tote",
+      "category": "CAT-BAG",
+      "vendors": [
+        "V-UC",
+        "V-EE"
+      ],
+      "components": [
+        "C-CT",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-S"
+      ]
+    },
+    {
+      "id": "B03",
+      "label": "SKU",
+      "name": "Duffel",
+      "category": "CAT-BAG",
+      "vendors": [
+        "V-UC",
+        "V-NA"
+      ],
+      "components": [
+        "C-RF",
+        "C-MZ",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-C",
+        "DC-W"
+      ]
+    },
+    {
+      "id": "B04",
+      "label": "SKU",
+      "name": "Travel Bag",
+      "category": "CAT-BAG",
+      "vendors": [
+        "V-UC"
+      ],
+      "components": [
+        "C-TF",
+        "C-MZ",
+        "C-BK",
+        "C-SC"
+      ],
+      "dcs": [
+        "DC-E",
+        "DC-W"
+      ]
+    }
+  ],
+  "sourcing": [
+    {
+      "id": "SA-001",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "component": "C-CT",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-001"
+    },
+    {
+      "id": "SA-002",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "component": "C-CT",
+      "facility": "FAC-AW",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-002"
+    },
+    {
+      "id": "SA-003",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-003"
+    },
+    {
+      "id": "SA-004",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "component": "C-CT",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-004"
+    },
+    {
+      "id": "SA-005",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-005"
+    },
+    {
+      "id": "SA-006",
+      "sku": "A02",
+      "vendor": "V-NA",
+      "component": "C-CT",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-006"
+    },
+    {
+      "id": "SA-007",
+      "sku": "A02",
+      "vendor": "V-NA",
+      "component": "C-CT",
+      "facility": "FAC-AW",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-007"
+    },
+    {
+      "id": "SA-008",
+      "sku": "A02",
+      "vendor": "V-NA",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-008"
+    },
+    {
+      "id": "SA-009",
+      "sku": "A03",
+      "vendor": "V-NA",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-009"
+    },
+    {
+      "id": "SA-010",
+      "sku": "A03",
+      "vendor": "V-NA",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-010"
+    },
+    {
+      "id": "SA-011",
+      "sku": "A03",
+      "vendor": "V-NA",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-011"
+    },
+    {
+      "id": "SA-012",
+      "sku": "A03",
+      "vendor": "V-TW",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-012"
+    },
+    {
+      "id": "SA-013",
+      "sku": "A03",
+      "vendor": "V-TW",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-013"
+    },
+    {
+      "id": "SA-014",
+      "sku": "A03",
+      "vendor": "V-TW",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-014"
+    },
+    {
+      "id": "SA-015",
+      "sku": "A04",
+      "vendor": "V-TW",
+      "component": "C-RF",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-015"
+    },
+    {
+      "id": "SA-016",
+      "sku": "A04",
+      "vendor": "V-TW",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-016"
+    },
+    {
+      "id": "SA-017",
+      "sku": "A04",
+      "vendor": "V-TW",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-017"
+    },
+    {
+      "id": "SA-018",
+      "sku": "A04",
+      "vendor": "V-EE",
+      "component": "C-RF",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-018"
+    },
+    {
+      "id": "SA-019",
+      "sku": "A04",
+      "vendor": "V-EE",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-019"
+    },
+    {
+      "id": "SA-020",
+      "sku": "A04",
+      "vendor": "V-EE",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-020"
+    },
+    {
+      "id": "SA-021",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-021"
+    },
+    {
+      "id": "SA-022",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "component": "C-RS",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-022"
+    },
+    {
+      "id": "SA-023",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "component": "C-FI",
+      "facility": "FAC-SN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-023"
+    },
+    {
+      "id": "SA-024",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "component": "C-FI",
+      "facility": "FAC-FP",
+      "role": "backup",
+      "approval": "pending",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-024"
+    },
+    {
+      "id": "SA-025",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-025"
+    },
+    {
+      "id": "SA-026",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-026"
+    },
+    {
+      "id": "SA-027",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "component": "C-RS",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-027"
+    },
+    {
+      "id": "SA-028",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "component": "C-FI",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-028"
+    },
+    {
+      "id": "SA-029",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-029"
+    },
+    {
+      "id": "SA-030",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-030"
+    },
+    {
+      "id": "SA-031",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "component": "C-RS",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-031"
+    },
+    {
+      "id": "SA-032",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-032"
+    },
+    {
+      "id": "SA-033",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-033"
+    },
+    {
+      "id": "SA-034",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "component": "C-CT",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-034"
+    },
+    {
+      "id": "SA-035",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "component": "C-CT",
+      "facility": "FAC-AW",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-035"
+    },
+    {
+      "id": "SA-036",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "component": "C-RS",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-036"
+    },
+    {
+      "id": "SA-037",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "component": "C-FI",
+      "facility": "FAC-SN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-037"
+    },
+    {
+      "id": "SA-038",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "component": "C-FI",
+      "facility": "FAC-FP",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-038"
+    },
+    {
+      "id": "SA-039",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-039"
+    },
+    {
+      "id": "SA-040",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "component": "C-CT",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-040"
+    },
+    {
+      "id": "SA-041",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "component": "C-RS",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-041"
+    },
+    {
+      "id": "SA-042",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "component": "C-FI",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-042"
+    },
+    {
+      "id": "SA-043",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-043"
+    },
+    {
+      "id": "SA-044",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "component": "C-RF",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-044"
+    },
+    {
+      "id": "SA-045",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "component": "C-RS",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-045"
+    },
+    {
+      "id": "SA-046",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-046"
+    },
+    {
+      "id": "SA-047",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-047"
+    },
+    {
+      "id": "SA-048",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-048"
+    },
+    {
+      "id": "SA-049",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "component": "C-BK",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-049"
+    },
+    {
+      "id": "SA-050",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-050"
+    },
+    {
+      "id": "SA-051",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-051"
+    },
+    {
+      "id": "SA-052",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-052"
+    },
+    {
+      "id": "SA-053",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "component": "C-BK",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-053"
+    },
+    {
+      "id": "SA-054",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-054"
+    },
+    {
+      "id": "SA-055",
+      "sku": "B02",
+      "vendor": "V-UC",
+      "component": "C-CT",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-055"
+    },
+    {
+      "id": "SA-056",
+      "sku": "B02",
+      "vendor": "V-UC",
+      "component": "C-CT",
+      "facility": "FAC-AW",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-056"
+    },
+    {
+      "id": "SA-057",
+      "sku": "B02",
+      "vendor": "V-UC",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-057"
+    },
+    {
+      "id": "SA-058",
+      "sku": "B02",
+      "vendor": "V-EE",
+      "component": "C-CT",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-058"
+    },
+    {
+      "id": "SA-059",
+      "sku": "B02",
+      "vendor": "V-EE",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-059"
+    },
+    {
+      "id": "SA-060",
+      "sku": "B03",
+      "vendor": "V-UC",
+      "component": "C-RF",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-060"
+    },
+    {
+      "id": "SA-061",
+      "sku": "B03",
+      "vendor": "V-UC",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-061"
+    },
+    {
+      "id": "SA-062",
+      "sku": "B03",
+      "vendor": "V-UC",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-062"
+    },
+    {
+      "id": "SA-063",
+      "sku": "B03",
+      "vendor": "V-NA",
+      "component": "C-RF",
+      "facility": "FAC-AW",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-063"
+    },
+    {
+      "id": "SA-064",
+      "sku": "B03",
+      "vendor": "V-NA",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-064"
+    },
+    {
+      "id": "SA-065",
+      "sku": "B03",
+      "vendor": "V-NA",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-065"
+    },
+    {
+      "id": "SA-066",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "component": "C-TF",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-066"
+    },
+    {
+      "id": "SA-067",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "component": "C-MZ",
+      "facility": "FAC-FP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": null
+    },
+    {
+      "id": "SA-068",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "component": "C-BK",
+      "facility": "FAC-SS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-068"
+    },
+    {
+      "id": "SA-069",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "component": "C-SC",
+      "facility": "FAC-HP",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-SA-069"
+    },
+    {
+      "id": "SA-070",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "component": "C-CT",
+      "facility": "FAC-AE",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2025-01-01",
+      "valid_to": "2026-01-01",
+      "evidence": "E-SA-070"
+    }
+  ],
+  "routes": [
+    {
+      "id": "DR-001",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-001"
+    },
+    {
+      "id": "DR-002",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "dc": "DC-C",
+      "store": "ST-BOS",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-002"
+    },
+    {
+      "id": "DR-003",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-003"
+    },
+    {
+      "id": "DR-004",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-NYC",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-004"
+    },
+    {
+      "id": "DR-005",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "dc": "DC-C",
+      "store": "ST-CHI",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-005"
+    },
+    {
+      "id": "DR-006",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "dc": "DC-E",
+      "store": "ST-CHI",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-006"
+    },
+    {
+      "id": "DR-007",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-MIN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-007"
+    },
+    {
+      "id": "DR-008",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "dc": "DC-E",
+      "store": "ST-MIN",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-008"
+    },
+    {
+      "id": "DR-009",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "dc": "DC-S",
+      "store": "ST-DAL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-009"
+    },
+    {
+      "id": "DR-010",
+      "sku": "A01",
+      "vendor": "V-NA",
+      "dc": "DC-C",
+      "store": "ST-DAL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-010"
+    },
+    {
+      "id": "DR-011",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-ATL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-011"
+    },
+    {
+      "id": "DR-012",
+      "sku": "A01",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-ATL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-012"
+    },
+    {
+      "id": "DR-013",
+      "sku": "A02",
+      "vendor": "V-NA",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-013"
+    },
+    {
+      "id": "DR-014",
+      "sku": "A02",
+      "vendor": "V-NA",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-014"
+    },
+    {
+      "id": "DR-015",
+      "sku": "A02",
+      "vendor": "V-NA",
+      "dc": "DC-S",
+      "store": "ST-DAL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-015"
+    },
+    {
+      "id": "DR-016",
+      "sku": "A02",
+      "vendor": "V-NA",
+      "dc": "DC-S",
+      "store": "ST-ATL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-016"
+    },
+    {
+      "id": "DR-017",
+      "sku": "A03",
+      "vendor": "V-NA",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-017"
+    },
+    {
+      "id": "DR-018",
+      "sku": "A03",
+      "vendor": "V-TW",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-018"
+    },
+    {
+      "id": "DR-019",
+      "sku": "A03",
+      "vendor": "V-NA",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-019"
+    },
+    {
+      "id": "DR-020",
+      "sku": "A03",
+      "vendor": "V-TW",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-020"
+    },
+    {
+      "id": "DR-021",
+      "sku": "A04",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-CHI",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-021"
+    },
+    {
+      "id": "DR-022",
+      "sku": "A04",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-MIN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-022"
+    },
+    {
+      "id": "DR-023",
+      "sku": "A04",
+      "vendor": "V-TW",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-023"
+    },
+    {
+      "id": "DR-024",
+      "sku": "A04",
+      "vendor": "V-EE",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-024"
+    },
+    {
+      "id": "DR-025",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-025"
+    },
+    {
+      "id": "DR-026",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-BOS",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-026"
+    },
+    {
+      "id": "DR-027",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-027"
+    },
+    {
+      "id": "DR-028",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-NYC",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-028"
+    },
+    {
+      "id": "DR-029",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-CHI",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-029"
+    },
+    {
+      "id": "DR-030",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-E",
+      "store": "ST-CHI",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-030"
+    },
+    {
+      "id": "DR-031",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-MIN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-031"
+    },
+    {
+      "id": "DR-032",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-E",
+      "store": "ST-MIN",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-032"
+    },
+    {
+      "id": "DR-033",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-S",
+      "store": "ST-DAL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-033"
+    },
+    {
+      "id": "DR-034",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-DAL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-034"
+    },
+    {
+      "id": "DR-035",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-ATL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-035"
+    },
+    {
+      "id": "DR-036",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-ATL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-036"
+    },
+    {
+      "id": "DR-037",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-037"
+    },
+    {
+      "id": "DR-038",
+      "sku": "F01",
+      "vendor": "V-TW",
+      "dc": "DC-S",
+      "store": "ST-SEA",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-038"
+    },
+    {
+      "id": "DR-039",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-039"
+    },
+    {
+      "id": "DR-040",
+      "sku": "F01",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-LA",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-040"
+    },
+    {
+      "id": "DR-041",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-CHI",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-041"
+    },
+    {
+      "id": "DR-042",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-MIN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-042"
+    },
+    {
+      "id": "DR-043",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-043"
+    },
+    {
+      "id": "DR-044",
+      "sku": "F02",
+      "vendor": "V-TW",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-044"
+    },
+    {
+      "id": "DR-045",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-045"
+    },
+    {
+      "id": "DR-046",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-046"
+    },
+    {
+      "id": "DR-047",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "dc": "DC-S",
+      "store": "ST-DAL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-047"
+    },
+    {
+      "id": "DR-048",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-ATL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-048"
+    },
+    {
+      "id": "DR-049",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-049"
+    },
+    {
+      "id": "DR-050",
+      "sku": "F03",
+      "vendor": "V-UC",
+      "dc": "DC-S",
+      "store": "ST-SEA",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-050"
+    },
+    {
+      "id": "DR-051",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-051"
+    },
+    {
+      "id": "DR-052",
+      "sku": "F03",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-LA",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-052"
+    },
+    {
+      "id": "DR-053",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-CHI",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-053"
+    },
+    {
+      "id": "DR-054",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-MIN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-054"
+    },
+    {
+      "id": "DR-055",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-DAL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-055"
+    },
+    {
+      "id": "DR-056",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-DAL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-056"
+    },
+    {
+      "id": "DR-057",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-ATL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-057"
+    },
+    {
+      "id": "DR-058",
+      "sku": "F04",
+      "vendor": "V-EE",
+      "dc": "DC-C",
+      "store": "ST-ATL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-058"
+    },
+    {
+      "id": "DR-059",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-059"
+    },
+    {
+      "id": "DR-060",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-C",
+      "store": "ST-BOS",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-060"
+    },
+    {
+      "id": "DR-061",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-061"
+    },
+    {
+      "id": "DR-062",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-NYC",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-062"
+    },
+    {
+      "id": "DR-063",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-C",
+      "store": "ST-CHI",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-063"
+    },
+    {
+      "id": "DR-064",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-E",
+      "store": "ST-CHI",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-064"
+    },
+    {
+      "id": "DR-065",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-MIN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-065"
+    },
+    {
+      "id": "DR-066",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-E",
+      "store": "ST-MIN",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-066"
+    },
+    {
+      "id": "DR-067",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-S",
+      "store": "ST-DAL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-067"
+    },
+    {
+      "id": "DR-068",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-C",
+      "store": "ST-DAL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-068"
+    },
+    {
+      "id": "DR-069",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-S",
+      "store": "ST-ATL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-069"
+    },
+    {
+      "id": "DR-070",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-C",
+      "store": "ST-ATL",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-070"
+    },
+    {
+      "id": "DR-071",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-071"
+    },
+    {
+      "id": "DR-072",
+      "sku": "B01",
+      "vendor": "V-UC",
+      "dc": "DC-S",
+      "store": "ST-SEA",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-072"
+    },
+    {
+      "id": "DR-073",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-073"
+    },
+    {
+      "id": "DR-074",
+      "sku": "B01",
+      "vendor": "V-TW",
+      "dc": "DC-S",
+      "store": "ST-LA",
+      "role": "backup",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-074"
+    },
+    {
+      "id": "DR-075",
+      "sku": "B02",
+      "vendor": "V-UC",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-075"
+    },
+    {
+      "id": "DR-076",
+      "sku": "B02",
+      "vendor": "V-EE",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-076"
+    },
+    {
+      "id": "DR-077",
+      "sku": "B02",
+      "vendor": "V-UC",
+      "dc": "DC-S",
+      "store": "ST-DAL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-077"
+    },
+    {
+      "id": "DR-078",
+      "sku": "B02",
+      "vendor": "V-EE",
+      "dc": "DC-S",
+      "store": "ST-ATL",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-078"
+    },
+    {
+      "id": "DR-079",
+      "sku": "B03",
+      "vendor": "V-UC",
+      "dc": "DC-C",
+      "store": "ST-CHI",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-079"
+    },
+    {
+      "id": "DR-080",
+      "sku": "B03",
+      "vendor": "V-NA",
+      "dc": "DC-C",
+      "store": "ST-MIN",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-080"
+    },
+    {
+      "id": "DR-081",
+      "sku": "B03",
+      "vendor": "V-UC",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-081"
+    },
+    {
+      "id": "DR-082",
+      "sku": "B03",
+      "vendor": "V-NA",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-082"
+    },
+    {
+      "id": "DR-083",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "dc": "DC-E",
+      "store": "ST-BOS",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-083"
+    },
+    {
+      "id": "DR-084",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "dc": "DC-E",
+      "store": "ST-NYC",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-084"
+    },
+    {
+      "id": "DR-085",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "dc": "DC-W",
+      "store": "ST-SEA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-085"
+    },
+    {
+      "id": "DR-086",
+      "sku": "B04",
+      "vendor": "V-UC",
+      "dc": "DC-W",
+      "store": "ST-LA",
+      "role": "active",
+      "approval": "approved",
+      "valid_from": "2026-01-01",
+      "valid_to": "2027-01-01",
+      "evidence": "E-DR-086"
+    }
+  ],
+  "disruptions": [
+    {
+      "id": "D-01",
+      "label": "Disruption",
+      "name": "Apex East shutdown",
+      "target": "FAC-AE",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-01",
+      "evidence": "E-D-01"
+    },
+    {
+      "id": "D-02",
+      "label": "Disruption",
+      "name": "Apex supplier outage",
+      "target": "SUP-AP",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-01",
+      "evidence": "E-D-02"
+    },
+    {
+      "id": "D-03",
+      "label": "Disruption",
+      "name": "East DC closure",
+      "target": "DC-E",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-01",
+      "evidence": "E-D-03"
+    },
+    {
+      "id": "D-04",
+      "label": "Disruption",
+      "name": "Metal Zipper component-wide quality hold",
+      "target": "C-MZ",
+      "valid_from": "2026-10-01",
+      "valid_to": "2026-11-01",
+      "evidence": "E-D-04"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-MASTER",
+      "title": "Synthetic master register",
+      "text": "The scenario's entity register defines ownership, production capabilities, product component requirements, vendor approvals, and store assortment. All records are fictional; component lists are intentionally simplified.",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-MASTER.md"
+    },
+    {
+      "id": "E-SA-001",
+      "title": "Sourcing record SA-001",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AE\", \"id\": \"SA-001\", \"role\": \"active\", \"sku\": \"A01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-001.md"
+    },
+    {
+      "id": "E-SA-002",
+      "title": "Sourcing record SA-002",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AW\", \"id\": \"SA-002\", \"role\": \"backup\", \"sku\": \"A01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-002.md"
+    },
+    {
+      "id": "E-SA-003",
+      "title": "Sourcing record SA-003",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-003\", \"role\": \"active\", \"sku\": \"A01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-003.md"
+    },
+    {
+      "id": "E-SA-004",
+      "title": "Sourcing record SA-004",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AW\", \"id\": \"SA-004\", \"role\": \"active\", \"sku\": \"A01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-004.md"
+    },
+    {
+      "id": "E-SA-005",
+      "title": "Sourcing record SA-005",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-005\", \"role\": \"active\", \"sku\": \"A01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-005.md"
+    },
+    {
+      "id": "E-SA-006",
+      "title": "Sourcing record SA-006",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AE\", \"id\": \"SA-006\", \"role\": \"active\", \"sku\": \"A02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-006.md"
+    },
+    {
+      "id": "E-SA-007",
+      "title": "Sourcing record SA-007",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AW\", \"id\": \"SA-007\", \"role\": \"backup\", \"sku\": \"A02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-007.md"
+    },
+    {
+      "id": "E-SA-008",
+      "title": "Sourcing record SA-008",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-008\", \"role\": \"active\", \"sku\": \"A02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-008.md"
+    },
+    {
+      "id": "E-SA-009",
+      "title": "Sourcing record SA-009",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-009\", \"role\": \"active\", \"sku\": \"A03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-009.md"
+    },
+    {
+      "id": "E-SA-010",
+      "title": "Sourcing record SA-010",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-010\", \"role\": \"active\", \"sku\": \"A03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-010.md"
+    },
+    {
+      "id": "E-SA-011",
+      "title": "Sourcing record SA-011",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-011\", \"role\": \"active\", \"sku\": \"A03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-011.md"
+    },
+    {
+      "id": "E-SA-012",
+      "title": "Sourcing record SA-012",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-012\", \"role\": \"active\", \"sku\": \"A03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-012.md"
+    },
+    {
+      "id": "E-SA-013",
+      "title": "Sourcing record SA-013",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-013\", \"role\": \"active\", \"sku\": \"A03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-013.md"
+    },
+    {
+      "id": "E-SA-014",
+      "title": "Sourcing record SA-014",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-014\", \"role\": \"active\", \"sku\": \"A03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-014.md"
+    },
+    {
+      "id": "E-SA-015",
+      "title": "Sourcing record SA-015",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RF\", \"facility\": \"FAC-AW\", \"id\": \"SA-015\", \"role\": \"active\", \"sku\": \"A04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-015.md"
+    },
+    {
+      "id": "E-SA-016",
+      "title": "Sourcing record SA-016",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-016\", \"role\": \"active\", \"sku\": \"A04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-016.md"
+    },
+    {
+      "id": "E-SA-017",
+      "title": "Sourcing record SA-017",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-017\", \"role\": \"active\", \"sku\": \"A04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-017.md"
+    },
+    {
+      "id": "E-SA-018",
+      "title": "Sourcing record SA-018",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RF\", \"facility\": \"FAC-AW\", \"id\": \"SA-018\", \"role\": \"active\", \"sku\": \"A04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-018.md"
+    },
+    {
+      "id": "E-SA-019",
+      "title": "Sourcing record SA-019",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-019\", \"role\": \"active\", \"sku\": \"A04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-019.md"
+    },
+    {
+      "id": "E-SA-020",
+      "title": "Sourcing record SA-020",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-020\", \"role\": \"active\", \"sku\": \"A04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-020.md"
+    },
+    {
+      "id": "E-SA-021",
+      "title": "Sourcing record SA-021",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-021\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-021.md"
+    },
+    {
+      "id": "E-SA-022",
+      "title": "Sourcing record SA-022",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RS\", \"facility\": \"FAC-SS\", \"id\": \"SA-022\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-022.md"
+    },
+    {
+      "id": "E-SA-023",
+      "title": "Sourcing record SA-023",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-FI\", \"facility\": \"FAC-SN\", \"id\": \"SA-023\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-023.md"
+    },
+    {
+      "id": "E-SA-024",
+      "title": "Sourcing record SA-024",
+      "text": "{\"approval\": \"pending\", \"component\": \"C-FI\", \"facility\": \"FAC-FP\", \"id\": \"SA-024\", \"role\": \"backup\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-024.md"
+    },
+    {
+      "id": "E-SA-025",
+      "title": "Sourcing record SA-025",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-025\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-025.md"
+    },
+    {
+      "id": "E-SA-026",
+      "title": "Sourcing record SA-026",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-026\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-026.md"
+    },
+    {
+      "id": "E-SA-027",
+      "title": "Sourcing record SA-027",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RS\", \"facility\": \"FAC-SS\", \"id\": \"SA-027\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-027.md"
+    },
+    {
+      "id": "E-SA-028",
+      "title": "Sourcing record SA-028",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-FI\", \"facility\": \"FAC-FP\", \"id\": \"SA-028\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-028.md"
+    },
+    {
+      "id": "E-SA-029",
+      "title": "Sourcing record SA-029",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-029\", \"role\": \"active\", \"sku\": \"F01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-029.md"
+    },
+    {
+      "id": "E-SA-030",
+      "title": "Sourcing record SA-030",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-030\", \"role\": \"active\", \"sku\": \"F02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-030.md"
+    },
+    {
+      "id": "E-SA-031",
+      "title": "Sourcing record SA-031",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RS\", \"facility\": \"FAC-SS\", \"id\": \"SA-031\", \"role\": \"active\", \"sku\": \"F02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-031.md"
+    },
+    {
+      "id": "E-SA-032",
+      "title": "Sourcing record SA-032",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-032\", \"role\": \"active\", \"sku\": \"F02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-032.md"
+    },
+    {
+      "id": "E-SA-033",
+      "title": "Sourcing record SA-033",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-033\", \"role\": \"active\", \"sku\": \"F02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-033.md"
+    },
+    {
+      "id": "E-SA-034",
+      "title": "Sourcing record SA-034",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AE\", \"id\": \"SA-034\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-034.md"
+    },
+    {
+      "id": "E-SA-035",
+      "title": "Sourcing record SA-035",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AW\", \"id\": \"SA-035\", \"role\": \"backup\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-035.md"
+    },
+    {
+      "id": "E-SA-036",
+      "title": "Sourcing record SA-036",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RS\", \"facility\": \"FAC-SS\", \"id\": \"SA-036\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-036.md"
+    },
+    {
+      "id": "E-SA-037",
+      "title": "Sourcing record SA-037",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-FI\", \"facility\": \"FAC-SN\", \"id\": \"SA-037\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-037.md"
+    },
+    {
+      "id": "E-SA-038",
+      "title": "Sourcing record SA-038",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-FI\", \"facility\": \"FAC-FP\", \"id\": \"SA-038\", \"role\": \"backup\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-038.md"
+    },
+    {
+      "id": "E-SA-039",
+      "title": "Sourcing record SA-039",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-039\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-039.md"
+    },
+    {
+      "id": "E-SA-040",
+      "title": "Sourcing record SA-040",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AW\", \"id\": \"SA-040\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-040.md"
+    },
+    {
+      "id": "E-SA-041",
+      "title": "Sourcing record SA-041",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RS\", \"facility\": \"FAC-SS\", \"id\": \"SA-041\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-041.md"
+    },
+    {
+      "id": "E-SA-042",
+      "title": "Sourcing record SA-042",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-FI\", \"facility\": \"FAC-FP\", \"id\": \"SA-042\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-042.md"
+    },
+    {
+      "id": "E-SA-043",
+      "title": "Sourcing record SA-043",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-043\", \"role\": \"active\", \"sku\": \"F03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-043.md"
+    },
+    {
+      "id": "E-SA-044",
+      "title": "Sourcing record SA-044",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RF\", \"facility\": \"FAC-AW\", \"id\": \"SA-044\", \"role\": \"active\", \"sku\": \"F04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-044.md"
+    },
+    {
+      "id": "E-SA-045",
+      "title": "Sourcing record SA-045",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RS\", \"facility\": \"FAC-SS\", \"id\": \"SA-045\", \"role\": \"active\", \"sku\": \"F04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-045.md"
+    },
+    {
+      "id": "E-SA-046",
+      "title": "Sourcing record SA-046",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-046\", \"role\": \"active\", \"sku\": \"F04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-046.md"
+    },
+    {
+      "id": "E-SA-047",
+      "title": "Sourcing record SA-047",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-047\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-047.md"
+    },
+    {
+      "id": "E-SA-048",
+      "title": "Sourcing record SA-048",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-048\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-048.md"
+    },
+    {
+      "id": "E-SA-049",
+      "title": "Sourcing record SA-049",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-BK\", \"facility\": \"FAC-SS\", \"id\": \"SA-049\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-049.md"
+    },
+    {
+      "id": "E-SA-050",
+      "title": "Sourcing record SA-050",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-050\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-050.md"
+    },
+    {
+      "id": "E-SA-051",
+      "title": "Sourcing record SA-051",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-051\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-051.md"
+    },
+    {
+      "id": "E-SA-052",
+      "title": "Sourcing record SA-052",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-052\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-052.md"
+    },
+    {
+      "id": "E-SA-053",
+      "title": "Sourcing record SA-053",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-BK\", \"facility\": \"FAC-SS\", \"id\": \"SA-053\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-053.md"
+    },
+    {
+      "id": "E-SA-054",
+      "title": "Sourcing record SA-054",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-054\", \"role\": \"active\", \"sku\": \"B01\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-054.md"
+    },
+    {
+      "id": "E-SA-055",
+      "title": "Sourcing record SA-055",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AE\", \"id\": \"SA-055\", \"role\": \"active\", \"sku\": \"B02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-055.md"
+    },
+    {
+      "id": "E-SA-056",
+      "title": "Sourcing record SA-056",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AW\", \"id\": \"SA-056\", \"role\": \"backup\", \"sku\": \"B02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-056.md"
+    },
+    {
+      "id": "E-SA-057",
+      "title": "Sourcing record SA-057",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-057\", \"role\": \"active\", \"sku\": \"B02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-057.md"
+    },
+    {
+      "id": "E-SA-058",
+      "title": "Sourcing record SA-058",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AW\", \"id\": \"SA-058\", \"role\": \"active\", \"sku\": \"B02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-058.md"
+    },
+    {
+      "id": "E-SA-059",
+      "title": "Sourcing record SA-059",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-059\", \"role\": \"active\", \"sku\": \"B02\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-059.md"
+    },
+    {
+      "id": "E-SA-060",
+      "title": "Sourcing record SA-060",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RF\", \"facility\": \"FAC-AW\", \"id\": \"SA-060\", \"role\": \"active\", \"sku\": \"B03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-060.md"
+    },
+    {
+      "id": "E-SA-061",
+      "title": "Sourcing record SA-061",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-061\", \"role\": \"active\", \"sku\": \"B03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-061.md"
+    },
+    {
+      "id": "E-SA-062",
+      "title": "Sourcing record SA-062",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-062\", \"role\": \"active\", \"sku\": \"B03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-062.md"
+    },
+    {
+      "id": "E-SA-063",
+      "title": "Sourcing record SA-063",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-RF\", \"facility\": \"FAC-AW\", \"id\": \"SA-063\", \"role\": \"active\", \"sku\": \"B03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-063.md"
+    },
+    {
+      "id": "E-SA-064",
+      "title": "Sourcing record SA-064",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-MZ\", \"facility\": \"FAC-FP\", \"id\": \"SA-064\", \"role\": \"active\", \"sku\": \"B03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-064.md"
+    },
+    {
+      "id": "E-SA-065",
+      "title": "Sourcing record SA-065",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-065\", \"role\": \"active\", \"sku\": \"B03\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-065.md"
+    },
+    {
+      "id": "E-SA-066",
+      "title": "Sourcing record SA-066",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-TF\", \"facility\": \"FAC-AE\", \"id\": \"SA-066\", \"role\": \"active\", \"sku\": \"B04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-066.md"
+    },
+    {
+      "id": "E-SA-068",
+      "title": "Sourcing record SA-068",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-BK\", \"facility\": \"FAC-SS\", \"id\": \"SA-068\", \"role\": \"active\", \"sku\": \"B04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-068.md"
+    },
+    {
+      "id": "E-SA-069",
+      "title": "Sourcing record SA-069",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-SC\", \"facility\": \"FAC-HP\", \"id\": \"SA-069\", \"role\": \"active\", \"sku\": \"B04\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-069.md"
+    },
+    {
+      "id": "E-SA-070",
+      "title": "Sourcing record SA-070",
+      "text": "{\"approval\": \"approved\", \"component\": \"C-CT\", \"facility\": \"FAC-AE\", \"id\": \"SA-070\", \"role\": \"active\", \"sku\": \"A01\", \"valid_from\": \"2025-01-01\", \"valid_to\": \"2026-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-SA-070.md"
+    },
+    {
+      "id": "E-DR-001",
+      "title": "Distribution record DR-001",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-001\", \"role\": \"active\", \"sku\": \"A01\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-001.md"
+    },
+    {
+      "id": "E-DR-002",
+      "title": "Distribution record DR-002",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-002\", \"role\": \"backup\", \"sku\": \"A01\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-002.md"
+    },
+    {
+      "id": "E-DR-003",
+      "title": "Distribution record DR-003",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-003\", \"role\": \"active\", \"sku\": \"A01\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-003.md"
+    },
+    {
+      "id": "E-DR-004",
+      "title": "Distribution record DR-004",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-004\", \"role\": \"backup\", \"sku\": \"A01\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-004.md"
+    },
+    {
+      "id": "E-DR-005",
+      "title": "Distribution record DR-005",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-005\", \"role\": \"active\", \"sku\": \"A01\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-005.md"
+    },
+    {
+      "id": "E-DR-006",
+      "title": "Distribution record DR-006",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-006\", \"role\": \"backup\", \"sku\": \"A01\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-006.md"
+    },
+    {
+      "id": "E-DR-007",
+      "title": "Distribution record DR-007",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-007\", \"role\": \"active\", \"sku\": \"A01\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-007.md"
+    },
+    {
+      "id": "E-DR-008",
+      "title": "Distribution record DR-008",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-008\", \"role\": \"backup\", \"sku\": \"A01\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-008.md"
+    },
+    {
+      "id": "E-DR-009",
+      "title": "Distribution record DR-009",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-009\", \"role\": \"active\", \"sku\": \"A01\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-009.md"
+    },
+    {
+      "id": "E-DR-010",
+      "title": "Distribution record DR-010",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-010\", \"role\": \"backup\", \"sku\": \"A01\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-010.md"
+    },
+    {
+      "id": "E-DR-011",
+      "title": "Distribution record DR-011",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-011\", \"role\": \"active\", \"sku\": \"A01\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-011.md"
+    },
+    {
+      "id": "E-DR-012",
+      "title": "Distribution record DR-012",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-012\", \"role\": \"backup\", \"sku\": \"A01\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-012.md"
+    },
+    {
+      "id": "E-DR-013",
+      "title": "Distribution record DR-013",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-013\", \"role\": \"active\", \"sku\": \"A02\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-013.md"
+    },
+    {
+      "id": "E-DR-014",
+      "title": "Distribution record DR-014",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-014\", \"role\": \"active\", \"sku\": \"A02\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-014.md"
+    },
+    {
+      "id": "E-DR-015",
+      "title": "Distribution record DR-015",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-015\", \"role\": \"active\", \"sku\": \"A02\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-015.md"
+    },
+    {
+      "id": "E-DR-016",
+      "title": "Distribution record DR-016",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-016\", \"role\": \"active\", \"sku\": \"A02\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-016.md"
+    },
+    {
+      "id": "E-DR-017",
+      "title": "Distribution record DR-017",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-017\", \"role\": \"active\", \"sku\": \"A03\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-017.md"
+    },
+    {
+      "id": "E-DR-018",
+      "title": "Distribution record DR-018",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-018\", \"role\": \"active\", \"sku\": \"A03\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-018.md"
+    },
+    {
+      "id": "E-DR-019",
+      "title": "Distribution record DR-019",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-019\", \"role\": \"active\", \"sku\": \"A03\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-019.md"
+    },
+    {
+      "id": "E-DR-020",
+      "title": "Distribution record DR-020",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-020\", \"role\": \"active\", \"sku\": \"A03\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-020.md"
+    },
+    {
+      "id": "E-DR-021",
+      "title": "Distribution record DR-021",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-021\", \"role\": \"active\", \"sku\": \"A04\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-021.md"
+    },
+    {
+      "id": "E-DR-022",
+      "title": "Distribution record DR-022",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-022\", \"role\": \"active\", \"sku\": \"A04\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-022.md"
+    },
+    {
+      "id": "E-DR-023",
+      "title": "Distribution record DR-023",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-023\", \"role\": \"active\", \"sku\": \"A04\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-023.md"
+    },
+    {
+      "id": "E-DR-024",
+      "title": "Distribution record DR-024",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-024\", \"role\": \"active\", \"sku\": \"A04\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-024.md"
+    },
+    {
+      "id": "E-DR-025",
+      "title": "Distribution record DR-025",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-025\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-025.md"
+    },
+    {
+      "id": "E-DR-026",
+      "title": "Distribution record DR-026",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-026\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-026.md"
+    },
+    {
+      "id": "E-DR-027",
+      "title": "Distribution record DR-027",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-027\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-027.md"
+    },
+    {
+      "id": "E-DR-028",
+      "title": "Distribution record DR-028",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-028\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-028.md"
+    },
+    {
+      "id": "E-DR-029",
+      "title": "Distribution record DR-029",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-029\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-029.md"
+    },
+    {
+      "id": "E-DR-030",
+      "title": "Distribution record DR-030",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-030\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-030.md"
+    },
+    {
+      "id": "E-DR-031",
+      "title": "Distribution record DR-031",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-031\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-031.md"
+    },
+    {
+      "id": "E-DR-032",
+      "title": "Distribution record DR-032",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-032\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-032.md"
+    },
+    {
+      "id": "E-DR-033",
+      "title": "Distribution record DR-033",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-033\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-033.md"
+    },
+    {
+      "id": "E-DR-034",
+      "title": "Distribution record DR-034",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-034\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-034.md"
+    },
+    {
+      "id": "E-DR-035",
+      "title": "Distribution record DR-035",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-035\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-035.md"
+    },
+    {
+      "id": "E-DR-036",
+      "title": "Distribution record DR-036",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-036\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-036.md"
+    },
+    {
+      "id": "E-DR-037",
+      "title": "Distribution record DR-037",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-037\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-037.md"
+    },
+    {
+      "id": "E-DR-038",
+      "title": "Distribution record DR-038",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-038\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-038.md"
+    },
+    {
+      "id": "E-DR-039",
+      "title": "Distribution record DR-039",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-039\", \"role\": \"active\", \"sku\": \"F01\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-039.md"
+    },
+    {
+      "id": "E-DR-040",
+      "title": "Distribution record DR-040",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-040\", \"role\": \"backup\", \"sku\": \"F01\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-040.md"
+    },
+    {
+      "id": "E-DR-041",
+      "title": "Distribution record DR-041",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-041\", \"role\": \"active\", \"sku\": \"F02\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-041.md"
+    },
+    {
+      "id": "E-DR-042",
+      "title": "Distribution record DR-042",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-042\", \"role\": \"active\", \"sku\": \"F02\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-042.md"
+    },
+    {
+      "id": "E-DR-043",
+      "title": "Distribution record DR-043",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-043\", \"role\": \"active\", \"sku\": \"F02\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-043.md"
+    },
+    {
+      "id": "E-DR-044",
+      "title": "Distribution record DR-044",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-044\", \"role\": \"active\", \"sku\": \"F02\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-044.md"
+    },
+    {
+      "id": "E-DR-045",
+      "title": "Distribution record DR-045",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-045\", \"role\": \"active\", \"sku\": \"F03\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-045.md"
+    },
+    {
+      "id": "E-DR-046",
+      "title": "Distribution record DR-046",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-046\", \"role\": \"active\", \"sku\": \"F03\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-046.md"
+    },
+    {
+      "id": "E-DR-047",
+      "title": "Distribution record DR-047",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-047\", \"role\": \"active\", \"sku\": \"F03\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-047.md"
+    },
+    {
+      "id": "E-DR-048",
+      "title": "Distribution record DR-048",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-048\", \"role\": \"active\", \"sku\": \"F03\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-048.md"
+    },
+    {
+      "id": "E-DR-049",
+      "title": "Distribution record DR-049",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-049\", \"role\": \"active\", \"sku\": \"F03\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-049.md"
+    },
+    {
+      "id": "E-DR-050",
+      "title": "Distribution record DR-050",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-050\", \"role\": \"backup\", \"sku\": \"F03\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-050.md"
+    },
+    {
+      "id": "E-DR-051",
+      "title": "Distribution record DR-051",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-051\", \"role\": \"active\", \"sku\": \"F03\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-051.md"
+    },
+    {
+      "id": "E-DR-052",
+      "title": "Distribution record DR-052",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-052\", \"role\": \"backup\", \"sku\": \"F03\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-052.md"
+    },
+    {
+      "id": "E-DR-053",
+      "title": "Distribution record DR-053",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-053\", \"role\": \"active\", \"sku\": \"F04\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-053.md"
+    },
+    {
+      "id": "E-DR-054",
+      "title": "Distribution record DR-054",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-054\", \"role\": \"active\", \"sku\": \"F04\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-054.md"
+    },
+    {
+      "id": "E-DR-055",
+      "title": "Distribution record DR-055",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-055\", \"role\": \"active\", \"sku\": \"F04\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-055.md"
+    },
+    {
+      "id": "E-DR-056",
+      "title": "Distribution record DR-056",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-056\", \"role\": \"backup\", \"sku\": \"F04\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-056.md"
+    },
+    {
+      "id": "E-DR-057",
+      "title": "Distribution record DR-057",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-057\", \"role\": \"active\", \"sku\": \"F04\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-057.md"
+    },
+    {
+      "id": "E-DR-058",
+      "title": "Distribution record DR-058",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-058\", \"role\": \"backup\", \"sku\": \"F04\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-058.md"
+    },
+    {
+      "id": "E-DR-059",
+      "title": "Distribution record DR-059",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-059\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-059.md"
+    },
+    {
+      "id": "E-DR-060",
+      "title": "Distribution record DR-060",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-060\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-060.md"
+    },
+    {
+      "id": "E-DR-061",
+      "title": "Distribution record DR-061",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-061\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-061.md"
+    },
+    {
+      "id": "E-DR-062",
+      "title": "Distribution record DR-062",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-062\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-062.md"
+    },
+    {
+      "id": "E-DR-063",
+      "title": "Distribution record DR-063",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-063\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-063.md"
+    },
+    {
+      "id": "E-DR-064",
+      "title": "Distribution record DR-064",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-064\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-064.md"
+    },
+    {
+      "id": "E-DR-065",
+      "title": "Distribution record DR-065",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-065\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-065.md"
+    },
+    {
+      "id": "E-DR-066",
+      "title": "Distribution record DR-066",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-066\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-066.md"
+    },
+    {
+      "id": "E-DR-067",
+      "title": "Distribution record DR-067",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-067\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-067.md"
+    },
+    {
+      "id": "E-DR-068",
+      "title": "Distribution record DR-068",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-068\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-068.md"
+    },
+    {
+      "id": "E-DR-069",
+      "title": "Distribution record DR-069",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-069\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-069.md"
+    },
+    {
+      "id": "E-DR-070",
+      "title": "Distribution record DR-070",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-070\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-070.md"
+    },
+    {
+      "id": "E-DR-071",
+      "title": "Distribution record DR-071",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-071\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-071.md"
+    },
+    {
+      "id": "E-DR-072",
+      "title": "Distribution record DR-072",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-072\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-072.md"
+    },
+    {
+      "id": "E-DR-073",
+      "title": "Distribution record DR-073",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-073\", \"role\": \"active\", \"sku\": \"B01\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-073.md"
+    },
+    {
+      "id": "E-DR-074",
+      "title": "Distribution record DR-074",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-074\", \"role\": \"backup\", \"sku\": \"B01\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-TW\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-074.md"
+    },
+    {
+      "id": "E-DR-075",
+      "title": "Distribution record DR-075",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-075\", \"role\": \"active\", \"sku\": \"B02\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-075.md"
+    },
+    {
+      "id": "E-DR-076",
+      "title": "Distribution record DR-076",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-076\", \"role\": \"active\", \"sku\": \"B02\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-076.md"
+    },
+    {
+      "id": "E-DR-077",
+      "title": "Distribution record DR-077",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-077\", \"role\": \"active\", \"sku\": \"B02\", \"store\": \"ST-DAL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-077.md"
+    },
+    {
+      "id": "E-DR-078",
+      "title": "Distribution record DR-078",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-S\", \"id\": \"DR-078\", \"role\": \"active\", \"sku\": \"B02\", \"store\": \"ST-ATL\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-EE\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-078.md"
+    },
+    {
+      "id": "E-DR-079",
+      "title": "Distribution record DR-079",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-079\", \"role\": \"active\", \"sku\": \"B03\", \"store\": \"ST-CHI\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-079.md"
+    },
+    {
+      "id": "E-DR-080",
+      "title": "Distribution record DR-080",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-C\", \"id\": \"DR-080\", \"role\": \"active\", \"sku\": \"B03\", \"store\": \"ST-MIN\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-080.md"
+    },
+    {
+      "id": "E-DR-081",
+      "title": "Distribution record DR-081",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-081\", \"role\": \"active\", \"sku\": \"B03\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-081.md"
+    },
+    {
+      "id": "E-DR-082",
+      "title": "Distribution record DR-082",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-082\", \"role\": \"active\", \"sku\": \"B03\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-NA\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-082.md"
+    },
+    {
+      "id": "E-DR-083",
+      "title": "Distribution record DR-083",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-083\", \"role\": \"active\", \"sku\": \"B04\", \"store\": \"ST-BOS\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-083.md"
+    },
+    {
+      "id": "E-DR-084",
+      "title": "Distribution record DR-084",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-E\", \"id\": \"DR-084\", \"role\": \"active\", \"sku\": \"B04\", \"store\": \"ST-NYC\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-084.md"
+    },
+    {
+      "id": "E-DR-085",
+      "title": "Distribution record DR-085",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-085\", \"role\": \"active\", \"sku\": \"B04\", \"store\": \"ST-SEA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-085.md"
+    },
+    {
+      "id": "E-DR-086",
+      "title": "Distribution record DR-086",
+      "text": "{\"approval\": \"approved\", \"dc\": \"DC-W\", \"id\": \"DR-086\", \"role\": \"active\", \"sku\": \"B04\", \"store\": \"ST-LA\", \"valid_from\": \"2026-01-01\", \"valid_to\": \"2027-01-01\", \"vendor\": \"V-UC\"}",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-DR-086.md"
+    },
+    {
+      "id": "E-D-01",
+      "title": "Apex East shutdown",
+      "text": "Hypothetical scenario: FAC-AE unavailable from 2026-10-01 through 2026-10-31. These are independent scenarios, not simultaneous events.",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-D-01.md"
+    },
+    {
+      "id": "E-D-02",
+      "title": "Apex supplier outage",
+      "text": "Hypothetical scenario: SUP-AP unavailable from 2026-10-01 through 2026-10-31. These are independent scenarios, not simultaneous events.",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-D-02.md"
+    },
+    {
+      "id": "E-D-03",
+      "title": "East DC closure",
+      "text": "Hypothetical scenario: DC-E unavailable from 2026-10-01 through 2026-10-31. These are independent scenarios, not simultaneous events.",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-D-03.md"
+    },
+    {
+      "id": "E-D-04",
+      "title": "Metal Zipper component-wide quality hold",
+      "text": "Hypothetical scenario: C-MZ unavailable from 2026-10-01 through 2026-10-31. These are independent scenarios, not simultaneous events.",
+      "recorded_at": "2026-01-01",
+      "synthetic": true,
+      "location": "data/evidence/E-D-04.md"
+    }
+  ]
+}

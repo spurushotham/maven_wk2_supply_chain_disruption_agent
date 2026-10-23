@@ -1,0 +1,5 @@
+id,evidence,name,synthetic,valid_from,valid_to
+D-01,E-D-01,Apex East shutdown,true,2026-10-01,2026-11-01
+D-02,E-D-02,Apex supplier outage,true,2026-10-01,2026-11-01
+D-03,E-D-03,East DC closure,true,2026-10-01,2026-11-01
+D-04,E-D-04,Metal Zipper component-wide quality hold,true,2026-10-01,2026-11-01

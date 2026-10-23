@@ -1,0 +1,5 @@
+id,name,synthetic
+DC-E,East DC,true
+DC-C,Central DC,true
+DC-S,South DC,true
+DC-W,West DC,true

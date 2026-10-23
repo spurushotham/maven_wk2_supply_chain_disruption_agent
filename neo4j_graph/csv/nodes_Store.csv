@@ -1,0 +1,9 @@
+id,name,synthetic
+ST-BOS,Boston,true
+ST-NYC,NYC,true
+ST-CHI,Chicago,true
+ST-MIN,Minneapolis,true
+ST-DAL,Dallas,true
+ST-ATL,Atlanta,true
+ST-SEA,Seattle,true
+ST-LA,Los Angeles,true
